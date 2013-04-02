@@ -161,7 +161,7 @@
     
     NSURL *fileURL = [NSURL fileURLWithPath:[NSHomeDirectory() stringByAppendingPathComponent:fileDirectory]];
     
-    UIDocumentInteractionController *interactionController = [[UIDocumentInteractionController interactionControllerWithURL:fileURL] retain];
+    UIDocumentInteractionController *interactionController = [UIDocumentInteractionController interactionControllerWithURL:fileURL];
     [interactionController presentOptionsMenuFromRect:[tableView cellForRowAtIndexPath:indexPath].frame inView:self.view animated:YES];
 }
 
